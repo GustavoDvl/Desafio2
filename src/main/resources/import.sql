@@ -9,7 +9,13 @@ INSERT INTO tb_activity (name, description, price) VALUES('Oficina de Github', '
 INSERT INTO tb_category (description) VALUES ('Curso');
 INSERT INTO tb_category (description) VALUES ('Oficina');
 
-INSERT INTO tb_block (start, end, tb_activity) VALUES ('2017/04/11 08:00:00 11:00:00', 3 );
---INSERT INTO tb_block (start) VALUES ('25/09/2017', '14:00:00','18:00:00');
---INSERT INTO tb_block (start, end) VALUES ('26/09/2017', '08:00:00', '11:00:00');
+
+INSERT INTO tb_activity_participant (activity_id, participant_id) VALUES (1, 1);
+INSERT INTO tb_activity_participant (activity_id, participant_id) VALUES (1, 2);
+INSERT INTO tb_activity_participant (activity_id, participant_id) VALUES (2, 3);
+
+INSERT INTO tb_block (start, end_moment, activity_id) VALUES (TIMESTAMP WITH TIME ZONE '2022-07-25T08:00:00Z',TIMESTAMP WITH TIME ZONE '2023-10-27T10:00:00Z', 1);
+INSERT INTO tb_block (start, end_moment, activity_id) VALUES (TIMESTAMP WITH TIME ZONE '2022-07-25T08:00:00',TIMESTAMP WITH TIME ZONE '2023-10-27T10:00:00Z', 1);
+INSERT INTO tb_block (start, end_moment, activity_id) VALUES (TIMESTAMP WITH TIME ZONE '2022-07-25T08:00:00',TIMESTAMP WITH TIME ZONE '2023-10-27T10:00:00Z', 1);
+
 

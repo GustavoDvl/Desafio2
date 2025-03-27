@@ -85,9 +85,7 @@ public class Activity {
         return participants;
     }
 
-    public void setParticipants(List<Participants> participants) {
-        this.participants = participants;
-    }
+
 
     public List<Block> getBlocks() {
         return block;
